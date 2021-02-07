@@ -1,0 +1,86 @@
+.botao-flutuante{
+    background-color: #25d366;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 68px;
+    font-size: 34px;
+    color: #fff;
+}
+.botao-flutuante:hover{
+    background-color: #25d365b0;
+}
+
+.modal-mensagem{
+    position: absolute;
+    transition: transform 160ms ease-in-out,opacity 160ms ease-in-out;
+    transform: translateY(50px);
+    opacity: 0;
+    background: rgb(18,140,126);
+    background: linear-gradient(180deg, rgba(18,140,126,1) 20%, rgba(7,94,84,1) 57%);
+    width: 250px;
+    height: 230px;
+    overflow: hidden;
+    bottom: 110px;
+    right: 20px;
+    border-radius: 8px;
+    -webkit-box-shadow: -1px 1px 14px 4px rgba(0,0,0,0.25); 
+    box-shadow: -1px 1px 14px 4px rgba(0,0,0,0.25); 
+}
+
+.open{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.area-mensagem{
+    display: flex;
+    flex-direction: column; 
+    margin-top: 20px; 
+    margin-bottom: 8px; 
+}
+
+.mensagem{ 
+    resize: none; 
+}
+
+.enviar-msg-whats{
+    margin-left: 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;  
+    cursor: pointer;
+    margin-bottom: 20px; 
+    font-weight: bold;
+}
+
+.enviar-msg-whats:hover{
+    background-color: #4caf4f96;
+}
+
+.area-botao{ 
+    height: 100%; 
+    background-color: #075e54;  
+}
+
+button:focus, textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+textarea{
+    padding-left: 18px;
+    padding-right: 18px;
+}

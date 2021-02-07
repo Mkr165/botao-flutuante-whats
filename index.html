@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal WhatsApp</title>    
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    <div id="modal-msg" class="modal-mensagem">
+        <div class="area-mensagem">
+            <textarea 
+             id="msg"
+             class="mensagem"
+             rows="9" cols="50"
+             placeholder="Digite a sua mensagem:"></textarea>
+        </div> 
+        <div class="area-botao">
+            <button class="enviar-msg-whats" onclick="enviar('msg')">Enviar via WhatsApp</button>
+        </div> 
+    </div>
+    <div id="areaBotao" class="botao-flutuante" onclick="controleModal()">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+    <script src="enviar-msg.js"></script>
+    <script src="https://kit.fontawesome.com/7d05759987.js" crossorigin="anonymous"></script>
+</body>
+</html>
